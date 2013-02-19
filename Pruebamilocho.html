@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX Test MilOchoMil</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script>
+$.ajax({
+	url:"http://partners.api.skyscanner.net/apiservices/browsedates/v1.0/GB/GBP/en-GB/EDI/LON/anytime/anytime?apiKey=edilw015697856897893749376456547",
+	cache:false
+	}).done(function(XML) { alert("success");
+	$("#myDiv").append(XML);
+	 })
+     </script>	
+</head>
+<body>
+<h2>List of prices:</h2>
+<div id="myDiv">
+<h2>This text should change into query results from SkyScanner</h2>
+</div>
+
+</body>
+</html>
